@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veille technologique BTS SIO SLAM de Majdaoui Zaid sur les différentes attaques informatiques et les tendances cyber récentes.">
+  <title>Veille Techno | Majdaoui Zaid</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="veille">
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="Accueil du portfolio">
+      <span class="brand-mark">ZM</span>
+      <span>Majdaoui Zaid</span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" data-nav>
+      <a href="index.html" data-nav-link>Accueil</a>
+      <a href="competences.html" data-nav-link>Compétences</a>
+      <a href="projets.html" data-nav-link>Projets</a>
+      <a href="veille.html" data-nav-link>Veille techno</a>
+      <a href="contact.html" data-nav-link>Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">
+      <span class="theme-icon"></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero watch-hero">
+      <div class="section-inner watch-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Veille technologique</p>
+          <h1>Différentes attaques informatiques à surveiller</h1>
+          <p class="lead">
+            Cette veille porte sur cinq familles d'attaques qui reviennent constamment dans l'actualité cyber: l'hameçonnage, les rançongiciels, les attaques DDoS, les attaques contre la chaîne logistique et l'exploitation de vulnérabilités zero-day.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#attaques">Voir les attaques</a>
+            <a class="button button-secondary" href="#sources">Voir les sources</a>
+          </div>
+        </div>
+
+        <aside class="watch-panel" data-reveal>
+          <img class="watch-illustration" src="assets/img/veille-cyber.svg" alt="Infographie sur les principales attaques informatiques">
+          <div class="watch-panel-body">
+            <span class="status is-valid"><span></span><span>Sources officielles consultées le 19 mai 2026</span></span>
+            <dl class="watch-facts">
+              <div>
+                <dt>Sujet</dt>
+                <dd>Cyberattaques</dd>
+              </div>
+              <div>
+                <dt>Angle</dt>
+                <dd>Comprendre, comparer, prévenir</dd>
+              </div>
+              <div>
+                <dt>Sources</dt>
+                <dd>ANSSI, Cybermalveillance.gouv.fr, ENISA, CISA</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="section-inner split-layout">
+        <div data-reveal>
+          <p class="eyebrow">Pourquoi ce thème ?</p>
+          <h2>Un sujet directement lié à la sécurité des applications et des services.</h2>
+        </div>
+        <div class="rich-text" data-reveal>
+          <p>
+            En BTS SIO SLAM, nous développons des applications, manipulons des bases de données, exposons des services et utilisons des composants tiers. Comprendre les attaques informatiques permet donc de mieux concevoir, mieux tester et mieux sécuriser les projets.
+          </p>
+          <p>
+            Cette veille ne cherche pas à lister toutes les menaces existantes. Elle met l'accent sur les familles d'attaques les plus structurantes pour un développeur: celles qui exploitent l'humain, les vulnérabilités, la disponibilité des services ou la confiance accordée à des prestataires et dépendances.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="attaques">
+      <div class="section-inner">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Panorama</p>
+          <h2>5 attaques à connaître</h2>
+        </div>
+
+        <div class="watch-grid">
+          <article class="watch-card" data-reveal>
+            <p class="eyebrow">Menace 01</p>
+            <h3>Hameçonnage / phishing</h3>
+            <p>
+              L'hameçonnage consiste à usurper l'identité d'un tiers de confiance pour pousser la victime à transmettre un mot de passe, une donnée bancaire ou une information sensible. Il passe par e-mail, SMS, appel vocal ou faux site web.
+            </p>
+            <ul class="watch-list">
+              <li>Point clé : c'est souvent la porte d'entrée initiale d'une compromission.</li>
+              <li>Impact : vol de comptes, fraude bancaire, usurpation d'identité, rebond vers d'autres attaques.</li>
+              <li>Vigilance : vérifier l'expéditeur, l'URL, le ton du message et les demandes urgentes.</li>
+            </ul>
+            <p class="watch-source">
+              Source : <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/dossier-phishing" target="_blank" rel="noopener">Cybermalveillance.gouv.fr, dossier phishing, mis à jour le 03/02/2026</a>.
+            </p>
+          </article>
+
+          <article class="watch-card" data-reveal>
+            <p class="eyebrow">Menace 02</p>
+            <h3>Rançongiciel / ransomware</h3>
+            <p>
+              Un rançongiciel chiffre ou bloque des fichiers, puis réclame une rançon. Les attaques modernes combinent souvent chiffrement, vol de données et menace de divulgation.
+            </p>
+            <ul class="watch-list">
+              <li>Point clé : l'attaque repose fréquemment sur un phishing ou sur des logiciels non corrigés.</li>
+              <li>Impact : arrêt d'activité, perte d'accès aux données, pression financière et réputationnelle.</li>
+              <li>Vigilance : sauvegardes hors ligne, mises à jour, MFA, filtrage des accès distants.</li>
+            </ul>
+            <p class="watch-source">
+              Source : <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciel-ransomware-particuliers" target="_blank" rel="noopener">Cybermalveillance.gouv.fr, fiche ransomware, publiée le 03/06/2025 et mise à jour le 09/12/2025</a>.
+            </p>
+          </article>
+
+          <article class="watch-card" data-reveal>
+            <p class="eyebrow">Menace 03</p>
+            <h3>Attaque DDoS</h3>
+            <p>
+              Une attaque DDoS rend un service indisponible en le saturant de requêtes ou en exploitant une faiblesse qui dégrade fortement son fonctionnement.
+            </p>
+            <ul class="watch-list">
+              <li>Point clé : l'objectif n'est pas toujours le vol de données, mais l'indisponibilité et parfois la diversion.</li>
+              <li>Impact : interruption de service, perte de revenus, image dégradée, baisse de productivité.</li>
+              <li>Vigilance : anti-DDoS, filtrage réseau, supervision, architecture capable d'absorber la charge.</li>
+            </ul>
+            <p class="watch-source">
+              Sources : <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/attaque-en-deni-de-service-ddos" target="_blank" rel="noopener">Cybermalveillance.gouv.fr, fiche DDoS, mise à jour le 18/02/2026</a> et <a href="https://cyber.gouv.fr/publications/denis-de-service-distribues-ddos" target="_blank" rel="noopener">ANSSI, Les Essentiels DDoS, 05/09/2023</a>.
+            </p>
+          </article>
+
+          <article class="watch-card" data-reveal>
+            <p class="eyebrow">Menace 04</p>
+            <h3>Attaque contre la chaîne logistique</h3>
+            <p>
+              L'attaquant compromet un tiers de confiance, par exemple un fournisseur de logiciel, une dépendance open source ou un prestataire, pour atteindre la victime finale.
+            </p>
+            <ul class="watch-list">
+              <li>Point clé : on n'attaque pas directement la cible, on passe par une relation de confiance.</li>
+              <li>Impact : propagation rapide, compromission en cascade, diffusion à grande échelle.</li>
+              <li>Vigilance : contrôle des dépendances, revue des fournisseurs, principe du moindre privilège.</li>
+            </ul>
+            <p class="watch-source">
+              Sources : <a href="https://cyber.gouv.fr/cyberdico/" target="_blank" rel="noopener">ANSSI CyberDico, définition "Supply chain attack", consulté le 19/05/2026</a> et <a href="https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction" target="_blank" rel="noopener">CISA, alerte sur une compromission de GitHub Actions, révisée le 26/03/2025</a>.
+            </p>
+          </article>
+
+          <article class="watch-card" data-reveal>
+            <p class="eyebrow">Menace 05</p>
+            <h3>Exploitation zero-day</h3>
+            <p>
+              Une vulnérabilité zero-day est exploitée avant qu'un correctif soit publié ou disponible. Elle laisse donc très peu de temps de réaction à la victime.
+            </p>
+            <ul class="watch-list">
+              <li>Point clé : la défense repose surtout sur la détection, la réduction de surface d'attaque et la segmentation.</li>
+              <li>Impact : compromission rapide, parfois silencieuse, sur des systèmes pourtant à jour.</li>
+              <li>Vigilance : durcissement, journalisation, surveillance des IOC et priorisation des correctifs dès leur sortie.</li>
+            </ul>
+            <p class="watch-source">
+              Sources : <a href="https://cyber.gouv.fr/cyberdico/" target="_blank" rel="noopener">ANSSI CyberDico, définition "Zero-day, 0-day", consulté le 19/05/2026</a> et <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities Catalog</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="section-inner">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Tendances</p>
+          <h2>Ce que montre la veille au 19 mai 2026</h2>
+        </div>
+
+        <div class="watch-insights">
+          <article class="watch-insight" data-reveal>
+            <h3>France</h3>
+            <p>
+              L'article "Cybermalveillance.gouv.fr dévoile les tendances de la menace cyber en France", publié le 26 mars 2026, présente les tendances observées sur l'année 2025 et confirme que l'hameçonnage reste une menace majeure pour tous les publics.
+            </p>
+          </article>
+
+          <article class="watch-insight" data-reveal>
+            <h3>Europe</h3>
+            <p>
+              L'ENISA Threat Landscape 2025, publié le 1er octobre 2025, indique que les menaces contre la disponibilité, notamment les DDoS, et les rançongiciels restent parmi les plus importantes dans l'écosystème européen.
+            </p>
+          </article>
+
+          <article class="watch-insight" data-reveal>
+            <h3>Développement logiciel</h3>
+            <p>
+              Les attaques supply chain et l'exploitation de vulnérabilités déjà utilisées "in the wild" rappellent qu'un projet sécurisé ne dépend pas seulement du code écrit, mais aussi des dépendances, des mises à jour et des fournisseurs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Bonnes pratiques</p>
+          <h2>Mes points de vigilance à retenir</h2>
+        </div>
+
+        <div class="watch-checklist" data-reveal>
+          <article>
+            <strong>1. Réduire les risques humains</strong>
+            <p>Sensibilisation, MFA, vérification des liens et des pièces jointes, procédures de signalement.</p>
+          </article>
+          <article>
+            <strong>2. Corriger vite</strong>
+            <p>Gestion de patchs, suppression des services inutiles, suivi des vulnérabilités exploitées.</p>
+          </article>
+          <article>
+            <strong>3. Préparer la reprise</strong>
+            <p>Sauvegardes testées, restauration documentée, segmentation et journalisation.</p>
+          </article>
+          <article>
+            <strong>4. Maîtriser les dépendances</strong>
+            <p>Inventaire des composants, revue des fournisseurs, contrôle des droits et de la chaîne de build.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" id="sources">
+      <div class="section-inner">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Sources suivies</p>
+          <h2>Références officielles de la veille</h2>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-card" data-reveal>
+            <h3>Cybermalveillance.gouv.fr</h3>
+            <p>Rapport d'activité 2025 et état de la menace en France.</p>
+            <p class="source-meta">Article publié le 26/03/2026, mis à jour le 06/05/2026.</p>
+            <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/rapport-activite-2025" target="_blank" rel="noopener">Consulter la source</a>
+          </article>
+
+          <article class="source-card" data-reveal>
+            <h3>Cybermalveillance.gouv.fr</h3>
+            <p>Dossier de référence sur l'hameçonnage, ses formes courantes et les signaux d'alerte.</p>
+            <p class="source-meta">Mis à jour le 03/02/2026.</p>
+            <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/dossier-phishing" target="_blank" rel="noopener">Consulter la source</a>
+          </article>
+
+          <article class="source-card" data-reveal>
+            <h3>Cybermalveillance.gouv.fr</h3>
+            <p>Fiche réflexe sur les rançongiciels: définition, protection et réaction en cas d'incident.</p>
+            <p class="source-meta">Publiée le 03/06/2025, mise à jour le 09/12/2025.</p>
+            <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciel-ransomware-particuliers" target="_blank" rel="noopener">Consulter la source</a>
+          </article>
+
+          <article class="source-card" data-reveal>
+            <h3>ANSSI / Cybermalveillance.gouv.fr</h3>
+            <p>Ressources complémentaires sur les attaques DDoS et les mesures de protection.</p>
+            <p class="source-meta">Mise à jour Cybermalveillance le 18/02/2026 ; publication ANSSI le 05/09/2023.</p>
+            <a href="https://cyber.gouv.fr/publications/denis-de-service-distribues-ddos" target="_blank" rel="noopener">Consulter la ressource ANSSI</a>
+          </article>
+
+          <article class="source-card" data-reveal>
+            <h3>ANSSI CyberDico</h3>
+            <p>Définitions de “zero-day” et “supply chain attack”.</p>
+            <p class="source-meta">Consulté le 19/05/2026.</p>
+            <a href="https://cyber.gouv.fr/cyberdico/" target="_blank" rel="noopener">Consulter la source</a>
+          </article>
+
+          <article class="source-card" data-reveal>
+            <h3>ENISA / CISA</h3>
+            <p>Tendances européennes 2025 et suivi des vulnérabilités déjà exploitées.</p>
+            <p class="source-meta">ENISA Threat Landscape 2025 publié le 01/10/2025.</p>
+            <a href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025" target="_blank" rel="noopener">Consulter l'ENISA Threat Landscape 2025</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <p>Portfolio BTS SIO SLAM - Majdaoui Zaid</p>
+      <div class="footer-links">
+        <a href="assets/cv-Majd.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="veille.html">Veille techno</a>
+        <a href="https://github.com/ZaidMajd/portfolioZaid" target="_blank" rel="noopener">Repo portfolio</a>
+        <a href="https://github.com/ZaidMajd" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

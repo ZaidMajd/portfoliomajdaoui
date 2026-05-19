@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projets BTS SIO SLAM de Majdaoui Zaid: M2L, AP Armée, stage Directus, stage GLPI et Mask Jam.">
+  <title>Projets | Majdaoui Zaid</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="projets">
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="Accueil du portfolio">
+      <span class="brand-mark">ZM</span>
+      <span>Majdaoui Zaid</span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" data-nav>
+      <a href="index.html" data-nav-link>Accueil</a>
+      <a href="competences.html" data-nav-link>Compétences</a>
+      <a href="projets.html" data-nav-link>Projets</a>
+      <a href="veille.html" data-nav-link>Veille techno</a>
+      <a href="contact.html" data-nav-link>Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">
+      <span class="theme-icon"></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-inner page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Réalisations professionnelles</p>
+          <h1>Projets réalisés</h1>
+          <p class="lead">Projets support de l'épreuve et réalisations complémentaires, présentés avec objectifs, technologies, difficultés, solutions et captures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner projects-stack">
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <img src="assets/img/m2l-01.png" alt="Capture du site M2L affichant la gestion des ligues">
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="eyebrow">Application web PHP</p>
+                <h2>M2L - Site dynamique</h2>
+              </div>
+              <a class="button button-secondary" href="https://github.com/ZaidMajd/AP-M2L-Zaid.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <p>
+              Application dynamique pour la Maison des Ligues permettant de consulter et gérer les ligues, clubs, utilisateurs et formations. Le projet repose sur PHP orienté objet, MySQL et une organisation MVC avec contrôleurs, vues, DAO et DTO.
+            </p>
+            <div class="project-details">
+              <div>
+                <h3>Objectifs</h3>
+                <ul>
+                  <li>Transformer un site statique en application dynamique.</li>
+                  <li>Gérer les ligues, clubs et formations depuis une base MySQL.</li>
+                  <li>Mettre en place des rôles utilisateur et des droits d'accès.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Difficultés rencontrées</h3>
+                <ul>
+                  <li>Structuration MVC et séparation claire DAO / DTO.</li>
+                  <li>Gestion des formulaires de création, modification et suppression.</li>
+                  <li>Maintien de la cohérence des données entre ligues, clubs et communes.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Solutions apportées</h3>
+                <ul>
+                  <li>Création de contrôleurs dédiés par fonctionnalité.</li>
+                  <li>Requêtes SQL préparées via une connexion PDO centralisée.</li>
+                  <li>Pages adaptées aux profils secrétaire, salarié et responsable.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tag-list" aria-label="Technologies M2L">
+              <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>MVC</span><span>DAO</span><span>DTO</span>
+            </div>
+            <div class="shot-grid">
+              <img src="assets/img/m2l-02.png" alt="Capture M2L avec module de gestion">
+              <img src="assets/img/m2l-03.png" alt="Capture M2L affichant une interface applicative">
+              <img src="assets/img/m2l-locaux.png" alt="Capture des locaux M2L">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <img src="assets/img/armee-01.png" alt="Schéma de base de données du projet AP Armée">
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="eyebrow">API REST PHP</p>
+                <h2>AP Armée - API de tournois</h2>
+              </div>
+              <a class="button button-secondary" href="https://github.com/ZaidMajd/AP-armee-ZAID.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <p>
+              API REST en PHP pour gérer des utilisateurs, tournois, équipes, rounds et matchs. Le service utilise une authentification Bearer par JWT, des routes JSON et des DAO connectés à une base MySQL.
+            </p>
+            <div class="project-details">
+              <div>
+                <h3>Objectifs</h3>
+                <ul>
+                  <li>Créer une API conforme à un contrat fourni.</li>
+                  <li>Protéger les routes via un token d'authentification.</li>
+                  <li>Permettre le CRUD sur les tournois, équipes et matchs.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Difficultés rencontrées</h3>
+                <ul>
+                  <li>Gestion des routes avec paramètres dynamiques.</li>
+                  <li>Vérification du token avant l'accès aux données protégées.</li>
+                  <li>Organisation des DAO pour plusieurs entités liées.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Solutions apportées</h3>
+                <ul>
+                  <li>Router centralisé dans l'entrée API.</li>
+                  <li>Classe Token dédiée à la création et vérification JWT.</li>
+                  <li>Tests Postman des endpoints principaux.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tag-list" aria-label="Technologies AP Armée">
+              <span>PHP</span><span>API REST</span><span>JWT</span><span>JSON</span><span>MySQL</span><span>Postman</span><span>.htaccess</span>
+            </div>
+            <div class="shot-grid">
+              <img src="assets/img/armee-auth.png" alt="Capture Postman avec authentification Bearer">
+              <img src="assets/img/armee-register.png" alt="Capture Postman d'une route d'inscription">
+              <img src="assets/img/armee-01.png" alt="Capture du modèle relationnel AP Armée">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media project-media-contain">
+            <img src="assets/img/stage-directus-edit-preview.png" alt="Capture du projet de stage avec édition Directus et aperçu de la page professionnelle">
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="eyebrow">Stage 1ère année - Directus</p>
+                <h2>Page professionnelle multilingue</h2>
+              </div>
+            </div>
+            <p>
+              Développement d'un module métier pendant le stage de première année pour gérer des pages professionnelles dans Directus. La solution permet de saisir un profil, d'associer un utilisateur, d'ajouter des traductions par langue et d'afficher des onglets personnalisés sur une page publique.
+            </p>
+            <div class="project-details">
+              <div>
+                <h3>Objectifs</h3>
+                <ul>
+                  <li>Modéliser les données nécessaires à une page professionnelle dans Directus.</li>
+                  <li>Permettre la gestion des traductions de métier et d'informations complémentaires.</li>
+                  <li>Afficher une fiche publique claire avec sélecteur de langue et onglets personnalisés.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Difficultés rencontrées</h3>
+                <ul>
+                  <li>Concevoir les relations entre utilisateurs, pages professionnelles, langues et traductions.</li>
+                  <li>Synchroniser le contenu saisi dans Directus avec l'affichage de la page publique.</li>
+                  <li>Structurer des onglets personnalisés exploitables côté administration comme côté visiteur.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Solutions apportées</h3>
+                <ul>
+                  <li>Création d'un schéma relationnel clair avec collection de traductions dédiée.</li>
+                  <li>Mise en place d'une interface Directus simple pour l'édition du contenu.</li>
+                  <li>Validation fonctionnelle du rendu final avec sélection de langue et restitution des onglets.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tag-list" aria-label="Technologies projet de stage">
+              <span>Directus</span><span>SQL</span><span>CMS headless</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Modélisation</span>
+            </div>
+            <div class="shot-grid shot-grid-contain">
+              <img src="assets/img/stage-directus-translation.png" alt="Page professionnelle publique avec traduction sélectionnée">
+              <img src="assets/img/stage-directus-schema.png" alt="Schéma relationnel du projet de stage avec utilisateurs, langues et traductions">
+              <img src="assets/img/stage-directus-onglets.png" alt="Collection Directus des onglets personnalisés du projet de stage">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media project-media-contain">
+            <img src="assets/img/stage-glpi-dashboard.png" alt="Capture du tableau de bord GLPI de gestion des unités contractuelles">
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="eyebrow">2ème stage 2ème année - GLPI</p>
+                <h2>Gestion des unités contractuelles</h2>
+              </div>
+            </div>
+            <p>
+              Personnalisation de GLPI réalisée pendant le second stage de deuxième année pour suivre la consommation d'unités sur les contrats CPU. Le projet relie les tickets aux contrats, historise les interventions, gère les avenants et reports, puis affiche un tableau de bord de suivi directement dans l'interface web.
+            </p>
+            <div class="project-details">
+              <div>
+                <h3>Objectifs</h3>
+                <ul>
+                  <li>Centraliser le suivi des unités consommées par contrat dans GLPI.</li>
+                  <li>Lier les tickets et interventions au décompte d'unités selon le niveau technicien.</li>
+                  <li>Afficher l'historique, le solde, les reports et la progression d'usage.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Difficultés rencontrées</h3>
+                <ul>
+                  <li>Comprendre la structure des données GLPI et identifier les bonnes tables SQL.</li>
+                  <li>Faire circuler les informations entre les écrans de ticket, les contrats et l'historique des unités.</li>
+                  <li>Rendre le suivi lisible pour les techniciens avec des synthèses et des exports exploitables.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Solutions apportées</h3>
+                <ul>
+                  <li>Analyse et vérification des données via des requêtes SQL ciblées sur les tables de contrats.</li>
+                  <li>Ajout d'interfaces dédiées pour la gestion des unités, l'historique et les avenants ou reports.</li>
+                  <li>Mise en place d'un tableau de bord avec indicateurs, progression de consommation et actions d'export.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tag-list" aria-label="Technologies projet GLPI">
+              <span>GLPI</span><span>PHP</span><span>MySQL</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="shot-grid shot-grid-contain">
+              <img src="assets/img/stage-glpi-history.png" alt="Historique des unités consommées sur un contrat GLPI">
+              <img src="assets/img/stage-glpi-ticket.png" alt="Formulaire de ticket GLPI avec gestion des unités contractuelles">
+              <img src="assets/img/stage-glpi-sql.png" alt="Requêtes SQL utilisées pour analyser les tables de contrats GLPI">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media project-media-contain">
+            <img src="assets/img/veille-cyber.svg" alt="Visuel du projet portfolio web et veille technologique">
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="eyebrow">Projet personnel</p>
+                <h2>Portfolio web et veille techno</h2>
+              </div>
+              <a class="button button-secondary" href="https://github.com/ZaidMajd/portfolioZaid" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <p>
+              Développement de mon portfolio BTS SIO SLAM pour présenter mes projets, mon tableau de compétences, mes stages et une veille technologique dédiée aux différentes attaques informatiques. Le site sert de support professionnel pour valoriser mes réalisations et mon identité numérique.
+            </p>
+            <div class="project-details">
+              <div>
+                <h3>Objectifs</h3>
+                <ul>
+                  <li>Présenter clairement mes projets, stages et compétences BTS SIO.</li>
+                  <li>Centraliser mes preuves, liens GitHub et éléments de veille technologique.</li>
+                  <li>Disposer d'un support propre, responsive et exploitable pour l'épreuve.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Difficultés rencontrées</h3>
+                <ul>
+                  <li>Structurer plusieurs types de contenus sans rendre le portfolio confus.</li>
+                  <li>Relier les preuves du tableau de compétences à des contenus cohérents.</li>
+                  <li>Construire une veille techno claire avec des sources sérieuses et récentes.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Solutions apportées</h3>
+                <ul>
+                  <li>Création de pages dédiées pour les projets, les compétences, le contact et la veille.</li>
+                  <li>Ajout de modales de preuves et d'une navigation simple entre les sections.</li>
+                  <li>Publication du code source dans un dépôt GitHub dédié au portfolio.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tag-list" aria-label="Technologies portfolio">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>GitHub</span><span>Veille techno</span>
+            </div>
+            <div class="shot-grid shot-grid-contain">
+              <img src="assets/img/veille-cyber.svg" alt="Visuel de la veille technologique intégrée au portfolio">
+              <img src="assets/img/stage-directus-schema.png" alt="Exemple de preuve projet intégrée au portfolio">
+              <img src="assets/img/stage-glpi-dashboard.png" alt="Exemple de réalisation valorisée dans le portfolio">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media pixel-art-media">
+            <img src="assets/img/maskjam-title.png" alt="Écran titre du projet Mask Jam">
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="eyebrow">Game Jam - Godot</p>
+                <h2>Mask Jam</h2>
+              </div>
+              <div class="project-links">
+                <a class="button button-secondary" href="https://github.com/JamMasks/Mask-Jam.git" target="_blank" rel="noopener">GitHub</a>
+                <a class="button button-secondary" href="https://imanirajdoost.itch.io/who-am-i" target="_blank" rel="noopener">itch.io</a>
+              </div>
+            </div>
+            <p>
+              Prototype de jeu 2D réalisé pendant une Game Jam. Le gameplay repose sur un personnage capable de changer de masque pour modifier ses interactions avec l'environnement, gérer un inventaire et progresser dans une ambiance pixel art.
+            </p>
+            <div class="project-details">
+              <div>
+                <h3>Objectifs</h3>
+                <ul>
+                  <li>Produire un prototype jouable dans un temps limité.</li>
+                  <li>Créer une mécanique centrale autour des masques.</li>
+                  <li>Intégrer sprites, sons, scènes et interface utilisateur.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Difficultés rencontrées</h3>
+                <ul>
+                  <li>Coordonner rapidement plusieurs branches Git pendant la jam.</li>
+                  <li>Gérer les effets des masques sur les collisions et interactions.</li>
+                  <li>Assembler gameplay, inventaire, menus et ambiance sonore.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Solutions apportées</h3>
+                <ul>
+                  <li>Scripts GDScript dédiés au joueur, à l'inventaire et aux masques.</li>
+                  <li>Utilisation de scènes Godot pour isoler les éléments du jeu.</li>
+                  <li>Gestion des inputs clavier et des changements de masque en jeu.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tag-list" aria-label="Technologies Mask Jam">
+              <span>Godot 4.6</span><span>GDScript</span><span>Jeu 2D</span><span>Pixel art</span><span>Git</span><span>Game Jam</span>
+            </div>
+            <div class="shot-grid pixel-art-grid">
+              <img src="assets/img/maskjam-ghost.png" alt="Sprite du masque fantôme Mask Jam">
+              <img src="assets/img/maskjam-rock.png" alt="Sprite du masque roche Mask Jam">
+              <img src="assets/img/maskjam-mairie.png" alt="Décor bâtiment du projet Mask Jam">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="image-lightbox" data-lightbox>
+    <div class="lightbox-card">
+      <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="Fermer">&times;</button>
+      <img data-lightbox-image src="" alt="">
+      <p data-lightbox-caption></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <p>Portfolio BTS SIO SLAM - Majdaoui Zaid</p>
+      <div class="footer-links">
+        <a href="assets/cv-Majd.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="veille.html">Veille techno</a>
+        <a href="https://github.com/ZaidMajd/portfolioZaid" target="_blank" rel="noopener">Repo portfolio</a>
+        <a href="https://github.com/ZaidMajd" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

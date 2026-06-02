@@ -40,14 +40,6 @@ const evidenceMap = {
     image: "assets/img/m2l-03.png",
     caption: "Écran applicatif M2L issu des captures de réalisation."
   },
-  presence: {
-    title: "Évolution d'un site web dynamique",
-    project: "M2L",
-    description: "La présence en ligne de l'organisation est améliorée par un site dynamique exploitant les données MySQL pour afficher les ligues, clubs, locaux, services et formations.",
-    proof: "Pages PHP, vues M2L, navigation et affichage des données de ligue.",
-    image: "assets/img/m2l-01.png",
-    caption: "Affichage des ligues et clubs dans l'application M2L."
-  },
   projet: {
     title: "Analyse des objectifs projet",
     project: "Fiches E6",
@@ -64,14 +56,6 @@ const evidenceMap = {
     image: "assets/img/m2l-04.png",
     caption: "Élément de capture M2L utilisé comme preuve de réalisation."
   },
-  tests: {
-    title: "Tests d'intégration et d'acceptation",
-    project: "AP Armée / M2L",
-    description: "Les endpoints AP Armée ont été vérifiés avec Postman. Les parcours M2L ont été validés via les interfaces de consultation, création, modification et suppression.",
-    proof: "Captures Postman, réponses HTTP 200, interfaces de gestion M2L.",
-    image: "assets/img/armee-auth.png",
-    caption: "Réponse HTTP 200 sur une route API protégée."
-  },
   deploiement: {
     title: "Mise à disposition du service",
     project: "AP Armée / M2L",
@@ -79,6 +63,14 @@ const evidenceMap = {
     proof: ".htaccess, URL localhost, dépôt GitHub, WAMP / phpMyAdmin.",
     image: "assets/img/armee-register.png",
     caption: "Endpoint API accessible en local."
+  },
+  "armee-pro": {
+    title: "Montée en compétences API REST",
+    project: "AP Armée - API REST",
+    description: "Le projet a permis de renforcer les compétences sur les API REST, l'authentification JWT, les tests Postman et la documentation des routes.",
+    proof: "Routes API documentées, tests Postman, sécurisation Bearer JWT et dépôt GitHub.",
+    image: "assets/img/armee-auth.png",
+    caption: "Validation d'une route protégée du projet AP Armée."
   },
   documentation: {
     title: "Accompagnement utilisateur",
@@ -88,14 +80,6 @@ const evidenceMap = {
     image: "assets/img/m2l-06.png",
     caption: "Capture complémentaire de l'application M2L."
   },
-  environnement: {
-    title: "Environnement d'apprentissage",
-    project: "Parcours BTS SIO",
-    description: "L'environnement de travail s'appuie sur VS Code, WAMP, phpMyAdmin, Looping, GitHub et la documentation PHP/MySQL.",
-    proof: "Outils listés dans les fiches descriptives et utilisés dans les projets.",
-    image: "assets/img/m2l-header.jpg",
-    caption: "Projet M2L exploité dans l'environnement de développement."
-  },
   veille: {
     title: "Veille informationnelle",
     project: "Portfolio / Veille technologique",
@@ -104,6 +88,14 @@ const evidenceMap = {
     image: "assets/img/veille-cyber.svg",
     caption: "Visuel de la veille technologique sur les cyberattaques."
   },
+  "portfolio-service": {
+    title: "Mise à disposition du portfolio",
+    project: "Portfolio web / veille",
+    description: "Le portfolio met à disposition un support consultable pour l'épreuve, avec une navigation claire et des preuves accessibles depuis le tableau de compétences.",
+    proof: "Navigation du site, modales de preuves, dépôt GitHub portfolioZaid et pages responsives.",
+    image: "assets/img/stage-glpi-dashboard.png",
+    caption: "Exemple de preuve projet centralisée dans le portfolio."
+  },
   identite: {
     title: "Identité professionnelle",
     project: "Portfolio / CV / GitHub",
@@ -111,14 +103,6 @@ const evidenceMap = {
     proof: "CV intégré, profil GitHub ZaidMajd, dépôt GitHub portfolioZaid et portfolio web.",
     image: "assets/img/m2l-locaux.png",
     caption: "Ressource visuelle intégrée au portfolio."
-  },
-  professionnel: {
-    title: "Projet professionnel",
-    project: "BTS SIO SLAM",
-    description: "Le parcours présente une orientation claire vers le développement applicatif, les bases de données et la conception de services web.",
-    proof: "CV, projets SLAM, compétences E6, veille techno et dépôt portfolioZaid.",
-    image: "assets/img/m2l-05.png",
-    caption: "Preuve visuelle complémentaire extraite des ressources M2L."
   },
   "slam-dev": {
     title: "Conception et développement applicatif",
@@ -242,6 +226,31 @@ const evidenceMap = {
   }
 };
 
+const evidenceValidations = {
+  standards: "M2L valide la compétence en structurant les ressources applicatives avec une architecture MVC, des DAO et des règles de code cohérentes.",
+  evolutions: "M2L valide la compétence en transformant une demande d'évolution en fonctionnalités concrètes de gestion des ligues, clubs et formations.",
+  projet: "M2L valide la compétence grâce à l'analyse des objectifs, des ressources, du contexte et des résultats attendus dans la fiche descriptive.",
+  habilitations: "AP Armée valide la compétence en mettant en place des accès sécurisés avec JWT et des contrôles d'autorisation sur les routes.",
+  "slam-maintenance": "AP Armée valide la compétence en répondant à des besoins applicatifs par des endpoints de création, modification, suppression et consultation.",
+  planning: "AP Armée valide la compétence par le découpage des modules API et l'organisation progressive des fonctionnalités sur la période de réalisation.",
+  deploiement: "AP Armée valide la compétence en rendant le service testable localement avec ses routes, son fichier .htaccess et ses réponses JSON.",
+  "armee-pro": "AP Armée valide la compétence en montrant une montée en compétences sur les API REST, l'authentification JWT, Postman et la documentation technique.",
+  "stage-patrimoine": "Le stage Directus valide la compétence en identifiant les collections, relations et ressources numériques nécessaires à la page professionnelle.",
+  "stage-demandes": "Le stage Directus valide la compétence en répondant à une demande de gestion de contenu avec des champs, relations et formulaires adaptés.",
+  "stage-presence": "Le stage Directus valide la compétence en publiant une page professionnelle multilingue consultable en ligne par les visiteurs.",
+  "stage-projet": "Le stage Directus valide la compétence par une progression organisée: analyse du besoin, modélisation, configuration puis validation du rendu.",
+  "stage-service": "Le stage Directus valide la compétence en livrant une fiche publique exploitable, avec traduction et onglets personnalisés.",
+  "stage-pro": "Le stage Directus valide la compétence par la montée en compétences sur un CMS headless, la modélisation et l'intégration web.",
+  "stage2-patrimoine": "Le stage GLPI valide la compétence en identifiant les données utiles des contrats, tickets, coûts et entités dans la base.",
+  "stage2-demandes": "Le stage GLPI valide la compétence en adaptant l'outil pour répondre au besoin de suivi des unités contractuelles depuis les tickets.",
+  "stage2-presence": "Le stage GLPI valide la compétence en améliorant l'interface web interne avec des vues de suivi, d'historique et de synthèse.",
+  "stage2-projet": "Le stage GLPI valide la compétence par l'enchaînement analyse du besoin, adaptation des écrans et validation du parcours complet.",
+  "stage2-service": "Le stage GLPI valide la compétence en mettant à disposition un service de suivi contractuel avec tableau de bord, export et historique.",
+  "stage2-pro": "Le stage GLPI valide la compétence par la montée en compétences sur GLPI, SQL, les tickets et l'adaptation d'interfaces métier.",
+  "portfolio-service": "Le portfolio valide la compétence en mettant à disposition un support consultable avec navigation, preuves et pages adaptées à l'épreuve.",
+  veille: "Le portfolio valide la compétence en structurant une veille informationnelle avec une page dédiée, des sources et une synthèse sur les cyberattaques."
+};
+
 const initTheme = () => {
   const savedTheme = localStorage.getItem("portfolio-theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -303,16 +312,18 @@ const initEvidenceModal = () => {
     description: modal.querySelector("[data-modal-description]"),
     detail: modal.querySelector("[data-modal-project-detail]"),
     proof: modal.querySelector("[data-modal-proof]"),
+    validation: modal.querySelector("[data-modal-validation]"),
     image: modal.querySelector("[data-modal-image]"),
     caption: modal.querySelector("[data-modal-caption]")
   };
 
-  const openModal = (item) => {
+  const openModal = (item, validation) => {
     fields.title.textContent = item.title;
     fields.project.textContent = item.project;
     fields.description.textContent = item.description;
     fields.detail.textContent = item.project;
     fields.proof.textContent = item.proof;
+    fields.validation.textContent = validation || item.description;
     fields.image.src = item.image;
     fields.image.alt = item.caption;
     fields.caption.textContent = item.caption;
@@ -335,33 +346,14 @@ const initEvidenceModal = () => {
   document.querySelectorAll("[data-evidence-id]").forEach((button) => {
     button.addEventListener("click", () => {
       const item = evidenceMap[button.dataset.evidenceId];
-      if (item) openModal(item);
+      const validation = evidenceValidations[button.dataset.evidenceId];
+      if (item) openModal(item, validation);
     });
   });
 
   modal.querySelector("[data-modal-close]")?.addEventListener("click", closeModal);
   modal.addEventListener("click", (event) => {
     if (event.target === modal) closeModal();
-  });
-};
-
-const initContactForm = () => {
-  const form = document.querySelector("[data-contact-form]");
-  if (!form) return;
-
-  const status = document.querySelector("[data-form-status]");
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const subject = formData.get("subject");
-    const message = formData.get("message");
-    const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`);
-
-    window.location.href = `mailto:zzaidmmajd@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-    status.textContent = "Votre application mail va s'ouvrir avec le message préparé.";
-    form.reset();
   });
 };
 
@@ -418,6 +410,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initReveal();
   initEvidenceModal();
-  initContactForm();
   initLightbox();
 });

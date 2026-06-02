@@ -190,8 +190,7 @@ html[data-theme="dark"] .theme-icon {
 
 .hero-grid,
 .page-hero-grid,
-.split-layout,
-.contact-grid {
+.split-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
   gap: 48px;
@@ -278,8 +277,6 @@ html[data-theme="dark"] .theme-icon {
 
 .quick-facts div,
 .tech-card,
-.contact-item,
-.contact-form,
 .project-card,
 .profile-panel {
   border: 1px solid var(--line);
@@ -307,18 +304,7 @@ html[data-theme="dark"] .theme-icon {
 
 .profile-panel {
   overflow: hidden;
-  align-self: stretch;
-}
-
-.profile-photo-wrap {
-  aspect-ratio: 1 / 1;
-  background: linear-gradient(135deg, var(--surface-soft), color-mix(in srgb, var(--accent), transparent 70%));
-}
-
-.profile-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  align-self: center;
 }
 
 .profile-body {
@@ -393,8 +379,7 @@ html[data-theme="dark"] .theme-icon {
   box-shadow: var(--shadow);
 }
 
-.tech-icon,
-.contact-icon {
+.tech-icon {
   display: grid;
   place-items: center;
   width: 42px;
@@ -1021,11 +1006,6 @@ button.status:hover {
   font-weight: 800;
 }
 
-.contact-grid {
-  grid-template-columns: 0.85fr 1.15fr;
-  align-items: start;
-}
-
 .watch-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
@@ -1163,80 +1143,6 @@ button.status:hover {
   font-size: 0.92rem;
 }
 
-.contact-panel {
-  display: grid;
-  gap: 12px;
-}
-
-.contact-item {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  padding: 18px;
-  box-shadow: none;
-  transition: transform 180ms ease, border-color 180ms ease;
-}
-
-a.contact-item:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-}
-
-.contact-item small {
-  display: block;
-  color: var(--muted);
-  font-weight: 800;
-}
-
-.contact-item strong {
-  word-break: break-word;
-}
-
-.contact-item.is-muted {
-  opacity: 0.75;
-}
-
-.contact-form {
-  display: grid;
-  gap: 18px;
-  padding: 26px;
-  box-shadow: none;
-}
-
-.form-row {
-  display: grid;
-  gap: 8px;
-}
-
-.form-row label {
-  font-weight: 900;
-}
-
-.form-row input,
-.form-row textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 13px 14px;
-  background: var(--surface-soft);
-  color: var(--text);
-  outline: none;
-  transition: border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.form-row input:focus,
-.form-row textarea:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent), transparent 82%);
-}
-
-.form-status {
-  min-height: 24px;
-  margin: 0;
-  color: var(--accent);
-  font-weight: 800;
-}
-
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 28px 0;
@@ -1307,7 +1213,6 @@ a.contact-item:hover {
   .hero-grid,
   .page-hero-grid,
   .split-layout,
-  .contact-grid,
   .project-card,
   .modal-content,
   .watch-hero-grid {
@@ -1366,8 +1271,7 @@ a.contact-item:hover {
   }
 
   .project-content,
-  .modal-content,
-  .contact-form {
+  .modal-content {
     padding: 22px;
   }
 

@@ -22,7 +22,6 @@
       <a href="competences.html" data-nav-link>Compétences</a>
       <a href="projets.html" data-nav-link>Projets</a>
       <a href="veille.html" data-nav-link>Veille techno</a>
-      <a href="contact.html" data-nav-link>Contact</a>
     </nav>
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">
       <span class="theme-icon"></span>
@@ -94,10 +93,10 @@
                 <td>5 semaines</td>
                 <td><button class="matrix-mark is-valid" type="button" data-evidence-id="standards" aria-label="Voir la preuve M2L pour gérer le patrimoine informatique"><span></span></button></td>
                 <td><button class="matrix-mark is-valid" type="button" data-evidence-id="evolutions" aria-label="Voir la preuve M2L pour les demandes applicatives"><span></span></button></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="presence" aria-label="Voir la preuve M2L pour la présence en ligne"><span></span></button></td>
+                <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
                 <td><button class="matrix-mark is-valid" type="button" data-evidence-id="projet" aria-label="Voir la preuve M2L pour le mode projet"><span></span></button></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="tests" aria-label="Voir la preuve M2L pour la mise à disposition"><span></span></button></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="environnement" aria-label="Voir la preuve M2L pour le développement professionnel"><span></span></button></td>
+                <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
+                <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
               </tr>
               <tr>
                 <th scope="row">
@@ -110,7 +109,7 @@
                 <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
                 <td><button class="matrix-mark is-valid" type="button" data-evidence-id="planning" aria-label="Voir la preuve AP Armée pour le mode projet"><span></span></button></td>
                 <td><button class="matrix-mark is-valid" type="button" data-evidence-id="deploiement" aria-label="Voir la preuve AP Armée pour la mise à disposition"><span></span></button></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="identite" aria-label="Voir la preuve AP Armée pour le développement professionnel"><span></span></button></td>
+                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="armee-pro" aria-label="Voir la preuve AP Armée pour le développement professionnel"><span></span></button></td>
               </tr>
               <tr>
                 <th scope="row">
@@ -146,9 +145,9 @@
                 <td>2ème année</td>
                 <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
                 <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="identite" aria-label="Voir la preuve portfolio pour la présence en ligne"><span></span></button></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="professionnel" aria-label="Voir la preuve portfolio pour le mode projet"><span></span></button></td>
-                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="documentation" aria-label="Voir la preuve portfolio pour la mise à disposition"><span></span></button></td>
+                <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
+                <td><span class="matrix-mark is-missing" aria-label="Non validée"><span></span></span></td>
+                <td><button class="matrix-mark is-valid" type="button" data-evidence-id="portfolio-service" aria-label="Voir la preuve portfolio pour la mise à disposition"><span></span></button></td>
                 <td><button class="matrix-mark is-valid" type="button" data-evidence-id="veille" aria-label="Voir la preuve portfolio pour le développement professionnel"><span></span></button></td>
               </tr>
             </tbody>
@@ -175,6 +174,10 @@
             <div>
               <dt>Preuve</dt>
               <dd data-modal-proof></dd>
+            </div>
+            <div>
+              <dt>Comment le projet valide la compétence</dt>
+              <dd data-modal-validation></dd>
             </div>
           </dl>
         </div>
